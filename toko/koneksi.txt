@@ -1,0 +1,3 @@
+<?php 
+$koneksi = new mysqli("localhost","id15975285_tokolisa", "]Hnrj4h}u}6umA+|","id15975285_tokobaju");
+?>

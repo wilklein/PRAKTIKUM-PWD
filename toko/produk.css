@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+height: 100%;
+place-items: center;
+}
+.container{
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card{
+    height: 400px;
+    width: 235px;
+    margin:20px 20px;
+ 
+    transition: 0.4s;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 5);
+}
+
+.card:hover{
+    height: 460px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 5);
+}
+
+.card .img{
+    height: 300px;
+    width: 100%;
+}
+
+.card .img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+}
+
+.card .top-text{
+    padding: 5px;
+}
+
+.card .top-text .name{
+    font-size: 20px;
+    font-weight: 60px;
+    text-align: justify;
+    padding: 0 0px 0px 10px;
+    color: #202020;
+}
+
+.card .bottom-text{
+    background: #fff;
+    opacity: 0;
+    display: block;
+    transition: 0.2s;
+}
+
+.card:hover .bottom-text{
+    opacity: 1;
+    visibility: visible;
+}
+.card .bottom-text .text{
+    text-align: justify;
+    padding: 15px;
+}
+
+.card .bottom-text .btn{
+    margin: 0;
+    text-align: left;
+
+}
+
+.card .bottom-text .btn a{
+    text-decoration: none;
+    background: #2F4BFF;
+    color: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-flex;
+    margin: 0 5px;
+    position: relative;
+}
+
+
+@media screen and (max-width:  768px){
+    .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .card{
+        max-width: 768px;
+        margin: 5px 5px; 
+    }
+
+}
+
+@media screen and (max-width:  517px){
+    .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .card{
+        max-width: 517px;
+        margin: 5px 5px; 
+        left: 40px;
+    }
+
+}
+
+
+footer{
+    position: relative;
+    height: 100%;
+    bottom: 0;
+    clear: both;
+
+}
